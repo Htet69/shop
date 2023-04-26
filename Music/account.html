@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task 5 for Assignment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#a4eaf3">
+	<header>
+		<div id="Acc">
+		<table border="0" cellpadding="0px" cellspacing="0px" class="tbl_Layout">
+			<tr align="center">
+				<td><a href="Login.html"><img src="images/Acc.png" id="btn1" ></a></td>
+				<td><a href="Order.html"><img src="images/SC.png" id="btn2"></a></td>
+				<td colspan="2" class="navbar">
+					<a href="index.html"> Home </a>
+					<a href="product.html">Products</a>
+					
+				 </td>
+				 <td><input type="text" name="searchBar" placeholder="Search for product..." id="nav"><img src="images/Lens.png"></td>
+				<td width="200px"> <span id="title">Exploud</span><img src="images/logo.png" class ="logo"></td>
+			</tr>
+			<table border="0" cellpadding="0px" cellspacing="0px" class="signup-box">
+			 <tr align="center">
+			 	<td colspan="6">
+			 		<h1>Sign Up</h1>
+			 	</td>
+			 </tr>
+			 <tr align="center">
+			 	<td colspan="6">
+      				<h4>It's free and only takes a minute</h4>
+      			</td>
+      		 </tr>
+      			<form>
+      				<tr align="center">
+      					<td>
+        					<input type="text" placeholder="First Name"  id="input">
+        				</td>
+        			</tr>
+        			<tr align="center">
+        				<td>
+        					
+        					<input type="text" placeholder="Last Name"  id="input2">
+        				</td>
+        			</tr>
+        			<tr align="center">
+        				<td>
+        					
+        					<input type="email" placeholder="Email" / id="input3">
+        				</td>
+					</tr>
+					<tr align="center">
+						<td>
+        					
+        					<input type="password" placeholder="Password" / id="input4">
+        				</td>
+        			</tr>
+        			<tr >
+        				<td>
+        					<label id="pass2">Address</label>
+        					<textarea placeholder="Town//Road//Street//House number" id="input5"></textarea>
+        				</td>
+        			</tr>
+        			<tr align="center">
+        				<td>
+        					<input type="button" name="btnSubmit" value="SUBMIT" class="BTN">
+        				</td>
+        			</tr>
+        			
+      			</form>
+      			 	<tr align="center" class="para-2">
+      					<td>
+        					By clicking the Sign Up button,you agree to our <br />
+        					<a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      					
+      					</td>
+      				</tr>
+      			
+      		</table>
+		
+			<table border="0" cellpadding="0px" cellspacing="0px" id="tbl_Layout2">	
+				<tr align="center">
+					<td colspan="4">
+						<a href=""><img src="images/fb.png" class="Social"></a>
+						<a href=""><img src="images/twitter.png" class="Social"></a>
+						<a href=""><img src="images/instagram.png" class="Social"></a>
+					</td>
+					<td>
+						<h3>For Latest Products</h3>
+						<input type="email" name="txtEmail" placeholder="Enter Your Email" id="nav">
+						<button type="submit" class="BTNfoot" onclick="ShowData()">Confirm</button>
+					</td>
+					<td>
+						Contact Us:<br>
+						Phone No:09-......<br>
+						Exploud420@gmail.com<br>
+					</td>
+				</tr>	
+			</table>
+        	<p class="Copy">@2022 Exploud.All Right Reserved</p>
+    	</table>
+    	</div>
+	</header>
+	<script type="text/javascript">
+		function ShowData() {
+			document.getElementById('Acc').innerHTML="Your Account has been created";
+		}
+	</script>
+</body>
+</html>

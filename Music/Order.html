@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task 5 Assignment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#a4eaf3">
+		<form>
+		<table border="0" cellpadding="0px" cellspacing="0px" class="tbl_Layout">
+				<tr align="center">
+					<td><a href="Login.html"><img src="images/Acc.png" id="btn1" ></a></td>
+					<td><a href="Order.html"><img src="images/SC.png" id="btn2"></a></td>
+					<td colspan="2" class="navbar">
+						<a href="index.html"> Home </a>
+						<a href="product.html">Products</a>
+						
+					 </td>
+					<td><input type="text" name="searchBar" placeholder="Search for product..." id="nav"><img src="images/Lens.png"></td>
+					<td width="200px"> <span id="title">Exploud</span><img src="images/logo.png" class ="logo"></td>
+				</tr>
+				
+		</table><br>
+		<table border="0" cellpadding="0px" cellspacing="0px" id="tbl_Layout2" >	
+			<tr class="cart" id="item1">
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td class="Cart" id="Pic">
+					<img src="images/Sony.png" class="IMG1" id="item1" >
+					<p id="item1">WH-1000XM5 Wireless Industry Leading Noise Canceling Headphones</p>
+					<small id="item1">Price:$399.99</small>		
+				</td>
+				<td><span id="Qty">1</span></td>
+				<td ><span id="Price">$399.99</span></td>
+				<td><input type="button" name="btnRemove" value="Remove" id=Del id="item1" onclick="DataRemove1()"></td>
+			</tr>
+			<tr class="cart" id="item2">
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td class="Cart" id="Pic2">
+					<img src="images/RC.webp" class="IMG1" id="item2">
+					<p id="item2">RAYCON The Gaming Earbuds</p>
+					<small id="item2">Price:$99.99</small>		
+					
+				</td>
+					<td id="Qty2">1</td>
+					<td id="Price2">$99.99</td>
+					<td><input type="button" name="btnRemove" value="Remove" id=Del onclick="DataRemove2()"></td>
+				</tr>
+			<tr class="cart" id="item3">
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td class="Cart" id="Pic3">
+					<img src="images/MSI2.png" class="IMG1" id="item3">
+					<p id="item3">MSI DS502 GAMING HEADSET</p>
+					<small id="item3">Price:$299.99</small>		
+					
+				</td>
+					<td id="Qty3">1</td>
+					<td id="Price3">$299.99</td>
+					<td><input type="button" name="btnRemove" value="Remove" id=Del onclick="DataRemove3()"></td>
+				</tr>
+			</table><br><br>
+			<table class="total">
+				<tr align="center" id="Total">
+					<td>Subtotal</td>
+					<td>$799.97</td>
+				</tr>
+				<tr align="center" id="Total2">
+					<td>Tax</td>
+					<td>$9.99</td>
+				</tr>
+				<tr align="center" id="Total3">
+					<td>Subtotal</td>
+					<td>$809.96</td>
+				</tr>
+			</table>
+		<table border="0" cellpadding="0px" cellspacing="0px" id="tbl_Layout2">	
+				<tr align="center">
+					<td colspan="4">
+						<a href=""><img src="images/fb.png" class="Social"></a>
+						<a href=""><img src="images/twitter.png" class="Social"></a>
+						<a href=""><img src="images/instagram.png" class="Social"></a>
+					</td>
+					<td>
+						<h3>For Latest Products</h3>
+						<input type="email" name="txtEmail" placeholder="Enter Your Email" id="nav">
+						<button type="submit" class="BTNfoot">Confirm</button>
+					</td>
+					<td>
+						Contact Us:<br>
+						Phone No:09-......<br>
+						Exploud420@gmail.com<br>
+					</td>
+				</tr>	
+			</table>
+        	<p class="Copy">@2022 Exploud.All Right Reserved</p>
+		</form>
+		<script type="text/javascript">
+			function DataRemove1(){
+				document.getElementById('item1').remove();
+				document.getElementById('Pic').remove();
+				document.getElementById('Qty').remove();
+				document.getElementById('Price').remove();
+				document.getElementById('Del').remove();
+			}
+			function DataRemove2(){
+				document.getElementById('item2').remove();
+				document.getElementById('Pic2').remove();
+				document.getElementById('Qty2').remove();
+				document.getElementById('Price2').remove();
+				document.getElementById('Del').remove();
+			}	
+			function DataRemove3(){
+				document.getElementById('item3').remove();
+				document.getElementById('Pic3').remove();
+				document.getElementById('Qty3').remove();
+				document.getElementById('Price3').remove();
+				document.getElementById('Del').remove();
+				document.getElementById('Total').remove();
+				document.getElementById('Total2').remove();
+				document.getElementById('Total3').remove().innerHTML="<h1>This place of is empty like space</h1>";
+				
+			}	
+		</script>
+</body>
+</html>
